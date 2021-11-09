@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_netflix/model/movie.dart';
 import 'package:flutter_netflix/widgets/widget_container.dart';
 import 'package:flutter_netflix/widgets/widget_peliculas.dart';
-import 'package:sliverbar_with_card/sliverbar_with_card.dart';
 
 void main() => runApp(const MyApp());
 
@@ -40,6 +39,7 @@ class _FisrtScreanState extends State<FisrtScrean> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       backgroundColor: Colors.transparent,
       body: listaWidget.elementAt(index),
       bottomNavigationBar: BottomNavigationBar(
