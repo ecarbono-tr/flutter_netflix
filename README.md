@@ -17,3 +17,4 @@ samples, guidance on mobile development, and a full API reference.
 <video width="320" height="240" controls="controls">
   <source src="https://github.com/ecarbono-tr/flutter_netflix/blob/2aa2c301a90bf53fb628169c764aada089d75ebb/gif/VID-20211109-WA0035.mp4" type="video/mp4" />
 </video>
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://github.com/ecarbono-tr/flutter_netflix/blob/2aa2c301a90bf53fb628169c764aada089d75ebb/gif/VID-20211109-WA0035.mp4)
