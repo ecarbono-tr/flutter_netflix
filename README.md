@@ -15,5 +15,5 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 <video width="320" height="240" controls="controls">
-  <source src="https://github.com/ecarbono-tr/flutter_netflix/blob/master/gif/VID-20211109-WA0035.mp4" type="video/mp4" />
+  <source src="gif/VID-20211109-WA0035.mp4" type="video/mp4" />
 </video>
