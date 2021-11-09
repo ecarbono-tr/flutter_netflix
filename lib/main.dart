@@ -30,7 +30,7 @@ class FisrtScrean extends StatefulWidget {
 class _FisrtScreanState extends State<FisrtScrean> {
   int index = 0;
   final Movie movie = hercules;
-  
+
   //Tres contenidos para los 3 botones  BottomNavigationBar
   static List<Widget> listaWidget = [
     const ScreanContainer(),
@@ -40,20 +40,8 @@ class _FisrtScreanState extends State<FisrtScrean> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: CardSliverAppBar(
-          height: 300,
-          background: Image.asset("assets/img/img_1.png"),
-          title: const Text("The Walking Dead"),
-          card: null,
-          body: Container(
-            margin: const EdgeInsets.symmetric(horizontal: 16),
-            child: Column(
-              children: [listaWidget.elementAt(index)],
-            ),
-          ),
-        ),
-      ),
+      backgroundColor: Colors.transparent,
+      body: listaWidget.elementAt(index),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.black,
         selectedItemColor: Colors.white,
