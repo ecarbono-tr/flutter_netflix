@@ -30,7 +30,6 @@ class _MyCardsState extends State<MyCardsProximamente> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          
           ...containerMovieProximamente.map((e) {
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,

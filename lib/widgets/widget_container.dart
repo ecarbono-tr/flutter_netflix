@@ -23,18 +23,22 @@ class _ScreanContainerState extends State<ScreanContainer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black,
+      margin: const EdgeInsets.only(top: 50.0),
       child: SliverFab(
-        expandedHeight: 95.9,
+        expandedHeight: 90.0,
+        topScalingEdge: 80,
+        floatingPosition: const FloatingPosition(
+          right: 16.0,
+        ),
         slivers: <Widget>[
           SliverAppBar(
             backgroundColor: Colors.transparent,
-            expandedHeight: 100.0,
-            toolbarHeight: 95.9,
+            expandedHeight: 60.0,
+            toolbarHeight: 50,
             pinned: true,
             automaticallyImplyLeading: true,
             title: Container(
-              margin: const EdgeInsets.only(top: 40, left: 30),
+              margin: const EdgeInsets.only(left: 30),
               child: Column(
                 children: [
                   Row(mainAxisAlignment: MainAxisAlignment.start, children: [
@@ -81,8 +85,8 @@ class _ScreanContainerState extends State<ScreanContainer> {
               background: Column(
                 children: [
                   Container(
-                    margin: const EdgeInsets.only(
-                        bottom: 26, left: 26, right: 26, top: 8),
+                    margin:
+                        const EdgeInsets.only(bottom: 26, left: 26, right: 26),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,

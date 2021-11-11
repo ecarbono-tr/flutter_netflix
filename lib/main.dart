@@ -38,69 +38,67 @@ class _FisrtScreanState extends State<FisrtScrean> {
   ];
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: (index == 1)
-            ? AppBar(
-                backgroundColor: Colors.black,
-                title: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    const Expanded(child: Text('Proximamente')),
-                    IconButton(
-                      tooltip: 'Buscar',
-                      iconSize: 30,
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.search,
-                        color: Colors.white,
-                      ),
+    return Scaffold(
+      appBar: (index == 1)
+          ? AppBar(
+              backgroundColor: Colors.black,
+              title: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  const Expanded(child: Text('Proximamente')),
+                  IconButton(
+                    tooltip: 'Buscar',
+                    iconSize: 30,
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.search,
+                      color: Colors.white,
                     ),
-                    const CircleAvatar(
-                      radius: 15,
-                      backgroundImage:
-                          AssetImage('assets/img/netflix_avatar.png'),
-                    )
-                  ],
-                ),
-              )
-            : null,
-        backgroundColor: Colors.black,
-        body: listaWidget.elementAt(index),
-        bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Colors.black,
-          selectedItemColor: Colors.white,
-          unselectedIconTheme: const IconThemeData(color: Colors.white),
-          unselectedLabelStyle: const TextStyle(
-            color: Colors.white,
-          ),
-          unselectedItemColor: Colors.white,
-          iconSize: 20,
-          selectedFontSize: 20,
-          unselectedFontSize: 16,
-          currentIndex: index,
-          onTap: (i) {
-            setState(() {
-              index = i;
-            });
-          },
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
+                  ),
+                  const CircleAvatar(
+                    radius: 15,
+                    backgroundImage:
+                        AssetImage('assets/img/netflix_avatar.png'),
+                  )
+                ],
               ),
-              label: 'Inicio',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.play_circle),
-              label: 'Proximamente',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.download),
-              label: 'Descargas',
-            ),
-          ],
+            )
+          : null,
+      backgroundColor: Colors.black,
+      body: listaWidget.elementAt(index),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black,
+        selectedItemColor: Colors.white,
+        unselectedIconTheme: const IconThemeData(color: Colors.white),
+        unselectedLabelStyle: const TextStyle(
+          color: Colors.white,
         ),
+        unselectedItemColor: Colors.white,
+        iconSize: 20,
+        selectedFontSize: 20,
+        unselectedFontSize: 16,
+        currentIndex: index,
+        onTap: (i) {
+          setState(() {
+            index = i;
+          });
+        },
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+            ),
+            label: 'Inicio',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.play_circle),
+            label: 'Proximamente',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.download),
+            label: 'Descargas',
+          ),
+        ],
       ),
     );
   }
