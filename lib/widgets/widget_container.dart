@@ -36,7 +36,7 @@ class _ScreanContainerState extends State<ScreanContainer> {
             expandedHeight: 60.0,
             toolbarHeight: 50,
             pinned: true,
-            automaticallyImplyLeading: true,
+            elevation: 0.1,
             title: Container(
               margin: const EdgeInsets.only(left: 30),
               child: Column(
