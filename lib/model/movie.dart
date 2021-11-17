@@ -1,7 +1,7 @@
 class Movie {
   String? year, time, titulo, img, imgPortada, desc, rating;
   List<String>? targs, directors, writers, actors;
-  String? categMenu, video;
+  String? categMenu, video, edad, temporadas;
 
   Movie(
       {this.year,
@@ -15,6 +15,8 @@ class Movie {
       this.targs,
       this.directors,
       this.writers,
+      this.edad,
+      this.temporadas,
       this.actors,
       this.categMenu});
 }
@@ -31,6 +33,8 @@ List<Movie> containerMovie = [
     year: '2021',
     time: '1h 38min',
     titulo: 'El olvido que seremos',
+    edad: '13+',
+    temporadas: '',
     imgPortada:
         'https://pics.filmaffinity.com/El_olvido_que_seremos-833396668-large.jpg',
     img:
@@ -45,6 +49,7 @@ List<Movie> containerMovie = [
     year: '2021',
     time: '1h 38min',
     titulo: 'Que duro es el amor',
+    edad: '13+',
     imgPortada:
         'https://pics.filmaffinity.com/A_Qu_duro_es_el_amor-807570210-large.jpg',
     img:
@@ -59,6 +64,8 @@ List<Movie> containerMovie = [
     year: '2021',
     time: '1h 38min',
     titulo: 'Lucifer',
+    edad: '16+',
+    temporadas: '7',
     imgPortada:
         'https://static.wikia.nocookie.net/netflix9203/images/f/f1/Lucifer.png/revision/latest/top-crop/width/360/height/450?cb=20200825035852&path-prefix=es',
     img:
@@ -78,6 +85,7 @@ List<Movie> containerMovie = [
     year: '2021',
     time: '1h 38min',
     titulo: 'El Gran Asalto',
+    edad: '17+',
     imgPortada:
         'https://static.wikia.nocookie.net/doblaje/images/e/ec/El_gran_asalto.jpg/revision/latest?cb=20190731184127&path-prefix=es',
     img:
@@ -95,6 +103,8 @@ List<Movie> containerMovie = [
     year: '2021',
     time: '1h 38min',
     titulo: 'Arcane',
+    edad: '13+',
+    temporadas: '3',
     imgPortada:
         'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/11/arcane-2520777.jpg?itok=BwLqAODb',
     img:
@@ -112,6 +122,7 @@ List<Movie> containerMovie = [
     year: '2021',
     time: '1h 38min',
     titulo: 'La casa de papel',
+    edad: '18+',
     imgPortada:
         'https://phantom-marca.unidadeditorial.es/ca8ebbfaa8eb053a92f64124cc38a1af/resize/414/f/jpg/assets/multimedia/imagenes/2021/09/02/16305820546830.jpg',
     img:
@@ -129,6 +140,7 @@ List<Movie> containerMovie = [
     year: '2014',
     time: '1h 38min',
     titulo: 'Donde esta Martha?',
+    edad: '18+',
     imgPortada:
         'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/donde-esta-marta02-1636381386.jpg?resize=480:*',
     img:
@@ -146,6 +158,7 @@ List<Movie> containerMovie = [
     year: '2014',
     time: '1h 38min',
     titulo: 'Hércules',
+    edad: '13+',
     imgPortada:
         'https://es.web.img2.acsta.net/pictures/14/06/12/15/44/475686.jpg',
     img: 'https://es.web.img2.acsta.net/pictures/14/06/12/15/44/475686.jpg',
@@ -165,6 +178,7 @@ List<Movie> containerMovie = [
     year: '2012',
     time: '1h 38min',
     titulo: 'Pablo Excobar',
+    edad: '18+',
     imgPortada:
         'https://spoilertime.com/wp-content/uploads/2016/09/narcos-1-426x597.jpg',
     img:
@@ -182,6 +196,7 @@ List<Movie> containerMovie = [
     year: '2012',
     time: '1h 38min',
     titulo: 'Narcos',
+    edad: '18+',
     imgPortada:
         'https://www.formulatv.com/images/series/posters/1800/1878/dest_1.jpg',
     img: 'https://www.formulatv.com/images/series/posters/1800/1878/dest_1.jpg',

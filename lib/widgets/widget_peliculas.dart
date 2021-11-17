@@ -8,8 +8,8 @@ void main() => runApp(ScreanPeli());
 
 class ScreanPeli extends StatelessWidget {
   final Movie movie = hercules;
-  ScreanPeli({movie,Key? key}) : super(key: key);
-  
+  ScreanPeli({movie, Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(

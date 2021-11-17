@@ -1,5 +1,3 @@
-// ignore_for_file: must_call_super, unused_field, prefer_final_fields
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_netflix/api/video_items.dart';
@@ -15,15 +13,10 @@ class MyCardsProximamente extends StatefulWidget {
 }
 
 class _MyCardsState extends State<MyCardsProximamente> {
-  
-
   @override
   void initState() {
     super.initState();
-    
   }
-
-  
 
   @override
   Widget build(BuildContext context) {
@@ -85,6 +78,4 @@ class _MyCardsState extends State<MyCardsProximamente> {
       ),
     );
   }
-
-  
 }

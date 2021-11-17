@@ -1,5 +1,3 @@
-// ignore_for_file: import_of_legacy_library_into_null_safe
-
 import 'package:flutter/material.dart';
 import 'package:flutter_netflix/model/movie.dart';
 import 'package:flutter_netflix/widgets/widget_container.dart';
@@ -71,12 +69,13 @@ class _FisrtScreanState extends State<FisrtScrean> {
         selectedItemColor: Colors.white,
         unselectedIconTheme: const IconThemeData(color: Colors.white),
         unselectedLabelStyle: const TextStyle(
+          fontSize: 14,
           color: Colors.white,
         ),
         unselectedItemColor: Colors.white,
-        iconSize: 20,
-        selectedFontSize: 20,
-        unselectedFontSize: 16,
+        iconSize: 15,
+        selectedFontSize: 15,
+        unselectedFontSize: 14,
         currentIndex: index,
         onTap: (i) {
           setState(() {
