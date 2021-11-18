@@ -2,6 +2,7 @@
 
 import 'dart:async';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_netflix/model/movie.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -19,6 +20,9 @@ class _MyAppGpsState extends State<MyAppGps> {
   @override
   void initState() {
     super.initState();
+    if (defaultTargetPlatform == TargetPlatform.android) {
+      AndroidGoogleMapsFlutter.useAndroidViewSurface = true;
+    }
   }
 
   late BitmapDescriptor pinLocationIcon;
