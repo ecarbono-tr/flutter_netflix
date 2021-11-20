@@ -56,7 +56,9 @@ class _MyCategoriaScreenState extends State<MyCategoriaScreen> {
                                       const EdgeInsets.symmetric(vertical: 10),
                                   child: Text(
                                     value,
-                                    style: styleCategoriaContent,
+                                    style: styleCategoria.copyWith(
+                                        fontSize: 20,
+                                        decoration: TextDecoration.none),
                                   ),
                                 ),
                               ))
@@ -65,15 +67,23 @@ class _MyCategoriaScreenState extends State<MyCategoriaScreen> {
                   ),
                 ),
               ),
-              IconButton(
-                tooltip: 'Buscar',
-                iconSize: 30,
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                icon: const Icon(
-                  Icons.close,
-                  color: Colors.white,
+              ClipOval(
+                child: Material(
+                  color: Colors.white, // Button color
+                  child: InkWell(
+                    splashColor: Colors.grey, // Splash color
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: const SizedBox(
+                      width: 56,
+                      height: 56,
+                      child: Icon(
+                        Icons.close,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ],

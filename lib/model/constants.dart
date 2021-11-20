@@ -12,9 +12,3 @@ ThemeData valorTheme = ThemeData(
 );
 TextStyle styleCategoria = const TextStyle(
     fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white);
-TextStyle styleCategoriaContent = const TextStyle(
-    fontSize: 20,
-    fontWeight: FontWeight.bold,
-    color: Colors.white,
-    decoration: TextDecoration.none,
-    textBaseline: TextBaseline.alphabetic);
