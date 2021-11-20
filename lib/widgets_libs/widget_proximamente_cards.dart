@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_netflix/api/video_items.dart';
 import 'package:flutter_netflix/model/movie.dart';
-import 'package:video_player/video_player.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class MyCardsProximamente extends StatefulWidget {
   const MyCardsProximamente({Key? key}) : super(key: key);
