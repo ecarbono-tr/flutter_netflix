@@ -1,20 +1,10 @@
-# flutter_netflix
+# Proyecto Netflix
+En este proyecto se puede ver los widgets utilizados en las clases del curso
+## Funcionalidad
+Esta aplicación muestra las películas y categorías a las que pertenece una película.
+## Acceso GPS
+Para acceder a la opción de GPS se debe dirigir a las categorías de la sección inferior y dar clic en cualquier película, seguido se abrirá un widget Bottom Sheet en el que se podrá visualizar las opciones de Ver,descargar,avance. Al dar clic en el botón Ver este abrirá una nueva ruta en la que se mostrará la opción de GPS.
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-<video width="320" height="240" controls="controls">
-  <source src="https://github.com/ecarbono-tr/flutter_netflix/blob/2aa2c301a90bf53fb628169c764aada089d75ebb/gif/VID-20211109-WA0035.mp4" type="video/mp4" />
-</video>
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://github.com/ecarbono-tr/flutter_netflix/blob/2aa2c301a90bf53fb628169c764aada089d75ebb/gif/VID-20211109-WA0035.mp4)
