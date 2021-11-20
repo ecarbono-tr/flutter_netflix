@@ -8,17 +8,17 @@ Para acceder a la opción de GPS se debe dirigir a las categorías de la secció
 ## Aplicación
 <a href="https://github.com/ecarbono-tr/flutter_netflix/blob/8d176074c8763421dc5104c590a83b5878bc83be/assets/gif/Pantalla%201.gif"><img src="https://github.com/ecarbono-tr/flutter_netflix/blob/8d176074c8763421dc5104c590a83b5878bc83be/assets/gif/Pantalla%201.gif" title="Gif"/></a>
 
-## Aplicación Categoria
+## Opción Categoria
 <a href="https://github.com/ecarbono-tr/flutter_netflix/blob/e2b63f1e9ef46f9db36cd68e7e81c39c2701649f/assets/gif/Pantalla2.gif"><img src="https://github.com/ecarbono-tr/flutter_netflix/blob/e2b63f1e9ef46f9db36cd68e7e81c39c2701649f/assets/gif/Pantalla2.gif" title="Gif"/></a>
 
-## Aplicación Botones
+## Opción Botones
 <a href="https://github.com/ecarbono-tr/flutter_netflix/blob/e2b63f1e9ef46f9db36cd68e7e81c39c2701649f/assets/gif/Pantalla3.gif"><img src="https://github.com/ecarbono-tr/flutter_netflix/blob/e2b63f1e9ef46f9db36cd68e7e81c39c2701649f/assets/gif/Pantalla3.gif" title="Gif"/></a>
 
-## Aplicación Videos
+## Opción Videos
 <a href="https://github.com/ecarbono-tr/flutter_netflix/blob/e2b63f1e9ef46f9db36cd68e7e81c39c2701649f/assets/gif/Pantalla4.gif"><img src="https://github.com/ecarbono-tr/flutter_netflix/blob/e2b63f1e9ef46f9db36cd68e7e81c39c2701649f/assets/gif/Pantalla4.gif" title="Gif"/></a>
 
-## Aplicación Descargas
+## Opción Descargas
 <a href="https://github.com/ecarbono-tr/flutter_netflix/blob/e2b63f1e9ef46f9db36cd68e7e81c39c2701649f/assets/gif/Pantalla5.gif"><img src="https://github.com/ecarbono-tr/flutter_netflix/blob/e2b63f1e9ef46f9db36cd68e7e81c39c2701649f/assets/gif/Pantalla5.gif" title="Gif"/></a>
 
-## Aplicación GPS
+## Opción GPS
 <a href="https://github.com/ecarbono-tr/flutter_netflix/blob/e2b63f1e9ef46f9db36cd68e7e81c39c2701649f/assets/gif/Pantalla6pgs.gif"><img src="https://github.com/ecarbono-tr/flutter_netflix/blob/e2b63f1e9ef46f9db36cd68e7e81c39c2701649f/assets/gif/Pantalla6pgs.gif" title="Gif"/></a>
