@@ -236,11 +236,14 @@ class _MyCardsState extends State<MyCards> {
                     ),
                   ],
                 ),
-                const Divider(),
+                const Divider(
+                  color: Colors.grey,
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SizedBox(
+                    Container(
+                      margin: EdgeInsets.only(left: 16, right: 16),
                       child: Icon(
                         Icons.info_outline,
                         color: Colors.white,
@@ -251,9 +254,12 @@ class _MyCardsState extends State<MyCards> {
                       style: style,
                     ),
                     Spacer(),
-                    Icon(
-                      Icons.keyboard_arrow_right,
-                      color: Colors.white,
+                    Container(
+                      margin: EdgeInsets.only(left: 16, right: 16),
+                      child: Icon(
+                        Icons.keyboard_arrow_right,
+                        color: Colors.white,
+                      ),
                     )
                   ],
                 )

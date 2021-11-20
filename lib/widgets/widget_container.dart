@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_netflix/widgets_libs/widget_inicio.dart';
@@ -40,42 +39,45 @@ class _ScreanContainerState extends State<ScreanContainer> {
               margin: const EdgeInsets.only(left: 30),
               child: Column(
                 children: [
-                  Row(mainAxisAlignment: MainAxisAlignment.start, children: [
-                    ...titulos
-                        .map(
-                          (e) => TextButton(
-                            onPressed: () {},
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      ...titulos
+                          .map(
+                            (e) => TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                e,
+                                style: const TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
+                            ),
+                          )
+                          .toList(),
+                      DropdownButton(
+                        underline: const SizedBox(),
+                        hint: const Text(
+                          "Categorias",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, color: Colors.white),
+                        ),
+                        items: items.map((item) {
+                          return DropdownMenuItem(
+                            value: item,
                             child: Text(
-                              e,
+                              item,
                               style: const TextStyle(
-                                  fontSize: 16,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white),
                             ),
-                          ),
-                        )
-                        .toList(),
-                    DropdownButton(
-                      underline: const SizedBox(),
-                      hint: const Text(
-                        "Categorias",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, color: Colors.white),
+                            enabled: true,
+                          );
+                        }).toList(),
                       ),
-                      items: items.map((item) {
-                        return DropdownMenuItem(
-                          value: item.toString(),
-                          child: Text(
-                            item,
-                            style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white),
-                          ),
-                          enabled: true,
-                        );
-                      }).toList(),
-                    ),
-                  ]),
+                    ],
+                  ),
                 ],
               ),
             ),
@@ -129,7 +131,7 @@ class _ScreanContainerState extends State<ScreanContainer> {
             return const SliverToBoxAdapter(child: InicioNetflix());
           }),
         ],
-        floatingWidget: const Text(''),
+        floatingWidget: const SizedBox(),
       ),
     );
   }
