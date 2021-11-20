@@ -16,9 +16,10 @@ class _InicioNetflixState extends State<ProximamenteNetflix> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-              //margin: const EdgeInsets.only(top: 50, left: 15),
-              color: Colors.black,
-              child: const MyCardsProximamente()),
+            //margin: const EdgeInsets.only(top: 50, left: 15),
+            color: Colors.black,
+            child: const MyCardsProximamente(),
+          ),
         ],
       ),
     );
