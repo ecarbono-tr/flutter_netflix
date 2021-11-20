@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_netflix/model/constants.dart';
 import 'package:flutter_netflix/model/movie.dart';
 import 'package:flutter_netflix/widgets/widget_container.dart';
 import 'package:flutter_netflix/widgets_libs/widget_download.dart';
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       routes: {
         '/': (BuildContext context) => const FisrtScrean(),
       },
@@ -39,16 +41,8 @@ class _FisrtScreanState extends State<FisrtScrean> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        iconTheme: const IconThemeData(color: Colors.white),
-        textTheme: const TextTheme(
-          bodyText1: TextStyle(color: Colors.white),
-          bodyText2: TextStyle(color: Colors.white),
-          subtitle1: TextStyle(color: Colors.white),
-          subtitle2: TextStyle(color: Colors.white),
-          caption: TextStyle(color: Colors.grey),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      theme: valorTheme,
       home: Scaffold(
         appBar: (index > 0)
             ? AppBar(

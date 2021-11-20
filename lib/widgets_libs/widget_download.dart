@@ -31,6 +31,14 @@ class _MyDownloadState extends State<MyDownload> {
             subtitle: Text(
                 'Descargaremos una seleccion personalizada de peliculas y series para que nunca te falte algo para ver en el telefono.'),
           ),
+          Container(
+            width: 300,
+            height: 300,
+            decoration: const BoxDecoration(
+              color: Colors.grey,
+              shape: BoxShape.circle,
+            ),
+          ),
         ],
       ),
     );

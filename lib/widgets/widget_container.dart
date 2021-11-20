@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_netflix/model/constants.dart';
+import 'package:flutter_netflix/widgets_libs/widget_categoria.dart';
 import 'package:flutter_netflix/widgets_libs/widget_inicio.dart';
 import 'package:sliver_fab/sliver_fab.dart';
 
@@ -11,8 +13,7 @@ class ScreanContainer extends StatefulWidget {
 }
 
 List titulos = ['Series', 'Peliculas'];
-String valorInicial = '';
-List items = ['Drama', 'Documentales'];
+
 
 class _ScreanContainerState extends State<ScreanContainer> {
   Color colorTheme = const Color(0xff0069a2);
@@ -48,33 +49,30 @@ class _ScreanContainerState extends State<ScreanContainer> {
                               onPressed: () {},
                               child: Text(
                                 e,
-                                style: const TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white),
+                                style: styleCategoria,
                               ),
                             ),
                           )
                           .toList(),
-                      DropdownButton(
-                        underline: const SizedBox(),
-                        hint: const Text(
-                          "Categorias",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, color: Colors.white),
-                        ),
-                        items: items.map((item) {
-                          return DropdownMenuItem(
-                            value: item,
-                            child: Text(
-                              item,
-                              style: const TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).push(PageRouteBuilder(
+                              opaque: false,
+                              pageBuilder: (BuildContext context, _, __) =>
+                                  const MyCategoriaScreen()));
+                        },
+                        child: Row(
+                          children: [
+                            Text(
+                              'Categoria',
+                              style: styleCategoria,
                             ),
-                            enabled: true,
-                          );
-                        }).toList(),
+                            const Icon(
+                              Icons.keyboard_arrow_down_rounded,
+                              color: Colors.white,
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
