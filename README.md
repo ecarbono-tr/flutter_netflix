@@ -5,5 +5,4 @@ Esta aplicación muestra las películas y categorías a las que pertenece una pe
 ## Acceso GPS
 Para acceder a la opción de GPS se debe dirigir a las categorías de la sección inferior y dar clic en cualquier película, seguido se abrirá un widget Bottom Sheet en el que se podrá visualizar las opciones de Ver,descargar,avance. Al dar clic en el botón Ver este abrirá una nueva ruta en la que se mostrará la opción de GPS.
 ## Aplicación
-
-<iframe width="260" height="539" style="position:absolute;top:0;left:0;width:100%;height:100%;"frameBorder="0" src="https://imgflip.com/embed/5uwm9c"></iframe>
+<a href="https://imgflip.com/embed/5uwm9c"><img src="https://imgflip.com/embed/5uwm9c" title="made at imgflip.com"/></a>
