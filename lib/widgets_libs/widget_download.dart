@@ -25,11 +25,12 @@ class _MyDownloadState extends State<MyDownload> {
               Text('Autodescargar')
             ],
           ),
+          const Divider(),
           const ListTile(
-            title: Text('Presentación de Descargas para ti'),
+            title: Text('Presentación de Descargas para ti\n'),
             subtitle: Text(
-                'Descargaremos una seleccion personalizada de peliculas y series para que nunca te falte algo para ver en el telefono'),
-          )
+                'Descargaremos una seleccion personalizada de peliculas y series para que nunca te falte algo para ver en el telefono.'),
+          ),
         ],
       ),
     );
