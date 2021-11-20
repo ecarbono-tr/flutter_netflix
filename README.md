@@ -5,4 +5,4 @@ Esta aplicación muestra las películas y categorías a las que pertenece una pe
 ## Acceso GPS
 Para acceder a la opción de GPS se debe dirigir a las categorías de la sección inferior y dar clic en cualquier película, seguido se abrirá un widget Bottom Sheet en el que se podrá visualizar las opciones de Ver,descargar,avance. Al dar clic en el botón Ver este abrirá una nueva ruta en la que se mostrará la opción de GPS.
 ## Aplicación
-<a href="https://github.com/ecarbono-tr/flutter_netflix/blob/f53645fac2db7b207c979f39b3affa6194b7ebe1/gif/5uwm9c.gif"><img src="https://github.com/ecarbono-tr/flutter_netflix/blob/f53645fac2db7b207c979f39b3affa6194b7ebe1/gif/5uwm9c.gif" title="Gif"/></a>
+<a href="https://github.com/ecarbono-tr/flutter_netflix/blob/8d176074c8763421dc5104c590a83b5878bc83be/assets/gif/Pantalla%201.gif"><img src="https://github.com/ecarbono-tr/flutter_netflix/blob/8d176074c8763421dc5104c590a83b5878bc83be/assets/gif/Pantalla%201.gif" title="Gif"/></a>
