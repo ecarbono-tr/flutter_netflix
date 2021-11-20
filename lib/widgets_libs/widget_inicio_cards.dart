@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_netflix/model/movie.dart';
 import 'package:flutter_netflix/widgets_libs/widget_gps.dart';
@@ -163,8 +165,9 @@ class _MyCardsState extends State<MyCards> {
                           Navigator.push(
                             context,
                             MaterialPageRoute<void>(
-                              builder: (BuildContext context) =>
-                                  MyAppGps(informacion: informacion,),
+                              builder: (BuildContext context) => MyAppGps(
+                                informacion: informacion,
+                              ),
                             ),
                           );
                         },
@@ -234,6 +237,26 @@ class _MyCardsState extends State<MyCards> {
                   ],
                 ),
                 const Divider(),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    SizedBox(
+                      child: Icon(
+                        Icons.info_outline,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      'Detalles y más',
+                      style: style,
+                    ),
+                    Spacer(),
+                    Icon(
+                      Icons.keyboard_arrow_right,
+                      color: Colors.white,
+                    )
+                  ],
+                )
               ],
             ),
           );
