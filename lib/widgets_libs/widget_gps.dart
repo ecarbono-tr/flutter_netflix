@@ -52,6 +52,7 @@ class _MyAppGpsState extends State<MyAppGps> {
   static const CameraPosition _kGooglePlex = CameraPosition(
     target: LatLng(10.9852822, -74.7915201),
     zoom: 16,
+    
   );
 
   @override
