@@ -1,9 +1,13 @@
+import 'package:appcenter_analytics/appcenter_analytics.dart';
+import 'package:appcenter_crashes/appcenter_crashes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_netflix/model/constants.dart';
 import 'package:flutter_netflix/model/movie.dart';
 import 'package:flutter_netflix/widgets/widget_container.dart';
 import 'package:flutter_netflix/widgets_libs/widget_download.dart';
 import 'package:flutter_netflix/widgets_libs/widget_proximamente.dart';
+import 'package:appcenter/appcenter.dart';
+import 'package:flutter/foundation.dart';
 
 void main() => runApp(const MyApp());
 
@@ -28,6 +32,14 @@ class FisrtScrean extends StatefulWidget {
 }
 
 class _FisrtScreanState extends State<FisrtScrean> {
+  void initAppCenter() async {
+    final ios = defaultTargetPlatform == TargetPlatform.iOS;
+    var app_secret = ios ? "" : "f72db8e7-d7f8-46b4-9a39-a66b5a790a79";
+
+    await AppCenter.start(
+        app_secret, [AppCenterAnalytics.id, AppCenterCrashes.id]);
+  }
+
   int index = 0;
   String titulo = '';
   final Movie movie = hercules;

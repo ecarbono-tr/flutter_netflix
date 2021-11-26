@@ -42,6 +42,10 @@ dependencies:
   chewie: ^1.2.2
   youtube_player_flutter: ^8.0.0
   google_maps_flutter: ^2.1.0
+  appcenter: ^0.2.1
+  appcenter_analytics: ^0.2.1
+  appcenter_crashes: ^0.2.1
+  
 
 dev_dependencies:
   flutter_test:
